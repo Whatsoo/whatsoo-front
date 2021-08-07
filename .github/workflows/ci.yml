@@ -14,9 +14,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.17.4'
-      - name: Install yarn and run
+      - name: Install yarn and build
         run: |
           yarn
-          yarn dev
+          yarn build
         env:
           CI: true
