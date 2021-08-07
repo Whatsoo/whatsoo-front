@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js 13.10
+      - name: Use Node.js 14.17.4
         uses: actions/setup-node@v1
         with:
-          node-version: '13.10'
+          node-version: '14.17.4'
       - name: Install yarn and run
         run: |
           yarn
